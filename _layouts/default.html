@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% if page.name == "index.html" %}
+      {{ site.title }}{% if site.description %} &middot; {{ site.description }}{% endif %}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+    </title>
+    <meta name="description " content="{{ page.description }}">
+    <link rel="shortcut icon" href="{{ 'assets/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/normalize.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/stylesheet.css' | relative_url }}">
+  </head>
+  <body class="container">
+    <header class="mt-1 mb-3">
+      <a href="{{ site.baseurl }}" class="text-dark fw-bold">{{ site.title }}</a>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+    <footer class="mt-3 mb-3">
+      <small class="text-muted">© 2021 {{ site.title }}. All rights reserved.</small>
+    </footer>
+  </body>
+</html>
