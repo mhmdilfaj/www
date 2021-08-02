@@ -2,6 +2,39 @@
  * stylesheet.css v-1.0.0 
  */
 
+/* load font */
+@font-face {
+  font-family: 'VulfSans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 400;
+  src:  url('/assets/VulfSans-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'VulfSans';
+  font-display: auto;
+  font-style: italic;
+  font-weight: 400;
+  src:  url('/assets/VulfSans-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'VulfSans';
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  src:  url('/assets/VulfSans-Bold.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'VulfSans';
+  font-display: auto;
+  font-style: italic;
+  font-weight: 700;
+  src:  url('/assets/VulfSans-BoldItalic.woff2') format('woff2');
+}
+
 /* variable */
 :root {
   --gray-000: #f8f9fa;
@@ -43,7 +76,7 @@
 
 html,
 body {
-  font-family: var(--system-font);
+  font-family: "VulfSans", var(--system-font);
   font-size: 16px;
   line-height: 1.5;
   color: var(--fg-color);
