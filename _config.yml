@@ -1,6 +1,6 @@
-title: blog
-description: simple jekyll blog
-baseurl: /blog
+title: ilfa
+description: Personal website
+baseurl: /www
 permalink: pretty
 plugins:
   - jekyll-seo-tag
