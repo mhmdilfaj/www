@@ -4,8 +4,8 @@ layout: default
 
 <article>
   <header class="mb-3">
+    <h1 class="m-0 p-0 fw-normal">{{ page.title }}</h1>
     <time datetime="{{ page.date | date_to_xmlschema }}"><small class="text-secondary">{{ page.date | date_to_long_string }}</small></time>
-    <h1 class="p-0 fw-normal">{{ page.title }}</h1>
   </header>
   {{ content }}
 </article>
